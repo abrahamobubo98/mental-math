@@ -192,7 +192,7 @@ export default function Home() {
     }
 
     setCurrentProblem({ num1, num2, operation, answer, type: numberType });
-  }, [difficulty, selectedOperations, selectedNumberTypes, maxDigits, maxDecimalPlaces]);
+  }, [difficulty, selectedOperations, selectedNumberTypes, maxDigits, maxDecimalPlaces, fractionOperations]);
 
   // Toggle operation selection
   const toggleOperation = (operation: Operation) => {
@@ -841,7 +841,7 @@ export default function Home() {
               <li>Press Enter or click Submit to check your answer</li>
               <li>Try to solve as many problems as you can before time runs out</li>
               <li>Build up your streak for an extra challenge!</li>
-              <li>Click "End Game" at any time to see your final score</li>
+              <li>Click &quot;End Game&quot; at any time to see your final score</li>
             </ul>
           </CardContent>
         </Card>
